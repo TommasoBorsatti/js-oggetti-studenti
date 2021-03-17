@@ -62,12 +62,27 @@ for (var i = 0; i < studenti.length; i++) {
 
 // Uso dei prompt per definire le proprietà che costituiranno un quarto studente/oggetto.
 // Parto da un oggetto vuoto e assegno le proprietà con la dot notation usando = come si fa con l assegnazione di variabili.
+// Aggiungo alcune semplici validazioni dati con dei cicli while.
 
 var studente4 = {};
 
 studente4.nome = prompt("Definisci il nome del quarto studente della classe");
+
+while (!isNaN(studente4.nome)) {
+  studente4.nome = prompt("Hei! Il nome del nuovo studente non può essere un numero! Riscrivilo:")
+}
+
 studente4.cognome = prompt("Adesso definisci il cognome del quarto studente della classe");
+
+while (!isNaN(studente4.cognome)) {
+  studente4.cognome = prompt("Attento! Il cognome del nuovo studente non può essere un numero! Riscrivilo:")
+}
+
 studente4.eta = prompt("Infine, definisci l'età del quarto studente della classe");
+
+while (isNaN(studente4.eta) || studente4.eta <= 18) {
+  studente4.eta = prompt("Fai attenzione! L'età del nuovo studente deve essere per forza un numero maggiore di 18!")
+}
 
 console.log(studente4);
 
