@@ -69,19 +69,19 @@ var studente4 = {};
 studente4.nome = prompt("Definisci il nome del quarto studente della classe");
 
 while (!isNaN(studente4.nome)) {
-  studente4.nome = prompt("Hei! Il nome del nuovo studente non può essere un numero! Riscrivilo:")
+  studente4.nome = prompt("Hei! Il nome del nuovo studente non può essere un numero! Riscrivilo:");
 }
 
 studente4.cognome = prompt("Adesso definisci il cognome del quarto studente della classe");
 
 while (!isNaN(studente4.cognome)) {
-  studente4.cognome = prompt("Attento! Il cognome del nuovo studente non può essere un numero! Riscrivilo:")
+  studente4.cognome = prompt("Attento! Il cognome del nuovo studente non può essere un numero! Riscrivilo:");
 }
 
-studente4.eta = prompt("Infine, definisci l'età del quarto studente della classe");
+studente4.eta = parseInt(prompt("Infine, definisci l'età del quarto studente della classe"));
 
 while (isNaN(studente4.eta) || studente4.eta <= 18) {
-  studente4.eta = prompt("Fai attenzione! L'età del nuovo studente deve essere per forza un numero maggiore di 18! (Sono ammessi solo studenti maggiorenni)")
+  studente4.eta = parseInt(prompt("Fai attenzione! L'età del nuovo studente deve essere per forza un numero maggiore di 18! (Sono ammessi solo studenti maggiorenni)"));
 }
 
 console.log(studente4);
