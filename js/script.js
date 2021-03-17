@@ -50,9 +50,9 @@ var studenti = [studente1, studente2, studente3];
 
 console.log(studenti);
 
-// Uso un ciclo FOR e scorro l'array Studenti; stando attento a scegliere gli indici giusti e le key giuste, stampole le proprietà nome e cognome.
-// Sono costretto a usare la notation con le parentesi quadre.
-// di tutti gli oggetti/studenti contenuti nell'array:
+// Uso un ciclo FOR e scorro l'array Studenti; stando attento a scegliere gli indici giusti e le key giuste, stampo le proprietà nome e cognome.
+// di tutti gli oggetti/studenti contenuti nell'array.
+// NB - Sono costretto a usare la notation con le parentesi quadre.:
 
 for (var i = 0; i < studenti.length; i++) {
 
@@ -81,7 +81,7 @@ while (!isNaN(studente4.cognome)) {
 studente4.eta = prompt("Infine, definisci l'età del quarto studente della classe");
 
 while (isNaN(studente4.eta) || studente4.eta <= 18) {
-  studente4.eta = prompt("Fai attenzione! L'età del nuovo studente deve essere per forza un numero maggiore di 18!")
+  studente4.eta = prompt("Fai attenzione! L'età del nuovo studente deve essere per forza un numero maggiore di 18! (Sono ammessi solo studenti maggiorenni)")
 }
 
 console.log(studente4);
