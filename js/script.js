@@ -52,11 +52,10 @@ console.log(studenti);
 
 // Uso un ciclo FOR e scorro l'array Studenti; stando attento a scegliere gli indici giusti e le key giuste, stampo le proprietà nome e cognome.
 // di tutti gli oggetti/studenti contenuti nell'array.
-// NB - Sono costretto a usare la notation con le parentesi quadre.:
 
 for (var i = 0; i < studenti.length; i++) {
 
-  console.log(studenti[i]["nome"] + " " + studenti[i]["cognome"]);
+  console.log(studenti[i].nome + " " + studenti[i]["cognome"]);
 
 }
 
