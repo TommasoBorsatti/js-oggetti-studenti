@@ -16,7 +16,7 @@ var studente1 = {
   cognome: "Borsatti",
   eta: 31,
 
-}
+};
 console.log(studente1);
 
 
@@ -36,7 +36,7 @@ var studente2 = {
   cognome: "Morbidozzi",
   eta: 28,
 
-}
+};
 
 var studente3 = {
 
@@ -44,7 +44,7 @@ var studente3 = {
   cognome: "Ciccini",
   eta: 33,
 
-}
+};
 
 var studenti = [studente1, studente2, studente3];
 
